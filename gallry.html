@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet"  href="gallry.css">
+    <link rel="stylesheet"  href="jquery.flipster.min.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="carousel">
+                <ul>
+                    <li><img src="pics/img1.jpeg"></li>
+                    <li><img src="pics/img2.jpeg"></li>
+                    <li><img src="pics/img3.jpeg"></li>
+                    <li><img src="pics/img4.jpeg"></li>
+                    <li><img src="pics/img5.jpeg"></li>
+
+
+                
+
+                        
+                </ul>
+            </div>
+        </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
+<script src="jquery.flipster.min.js"></script>
+<script>
+    $('.carousel').flipster({
+        style:'carousel',
+        spacing: -0.3,
+    });
+</script>
+
+       
+    </body>
+    </html>

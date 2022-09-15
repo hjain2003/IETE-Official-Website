@@ -220,7 +220,7 @@ label #cancel{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to top, #000000, #150008, #1e0015, #220020, #21002f, #1e0037, #170240, #06044a, #05054c, #04064f, #040651, #030754);
+  background-image: linear-gradient(to right bottom, #42064d, #33114a, #261544, #1b173c, #131733);
 }
 #contact a
 {
@@ -250,17 +250,6 @@ label #cancel{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-}
-.button-49
-{
-  animation:float 4s infinite;
-}
-@keyframes float
-{
-  0%{transform: translateY(-30px);}
-  25%{transform: translateY(0px);}
-  50%{transform: translateY(30px);}
-  100%{transform: translateY(30px);}
 }
 .button-49:after {
   --slice-0: inset(50% 50% 50% 50%);

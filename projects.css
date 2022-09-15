@@ -27,6 +27,8 @@ body {
   margin: 1em auto;
   overflow: hidden;
   background: transparent;
+  border-radius: 20px;
+  box-shadow: rgb(4, 151, 158);
 }
 
 .thumbnail {
@@ -154,9 +156,10 @@ body {
   border-radius: 30px;
   background-size: contain;
   background-position: center center;
-  background: rgb(13, 202, 219);
+  /* background-image: linear-gradient(to right bottom, #141a1d, #0c1c27, #061e31, #091e3b, #171c42); */
   color: rgb(8, 8, 72);
-  box-shadow: 15px 15px #21b673;
+
+  /* box-shadow: 15px 15px #21b673; */
 }
 
 .carousel-cell::before {

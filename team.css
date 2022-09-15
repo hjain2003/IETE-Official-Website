@@ -123,9 +123,9 @@ img {
 }
 
 #teamslider {
-  width: 200%;
-  display: block;
-  margin-left: -250px;
+  width: auto;
+  /* display: block; */
+  /* margin-left: -250px; */
   /* margin: auto; */
 
   /* position: center; */

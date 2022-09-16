@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Permanent+Marker&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -9,16 +10,7 @@ body {
   background-position: center;
 }
 
-#teamheading {
-  margin-left: -250px;
-}
-
-#teamslider {
-  width: 800px;
-}
-
-.flickity-page-dots
-{
+.flickity-page-dots {
   margin-top: 50px;
 }
 .testimonial {
@@ -75,8 +67,8 @@ body {
   display: inline-block;
   border: 4px solid white;
   border-radius: 50%;
-  height:180px;
-  width:180px;
+  height: 180px;
+  width: 180px;
   box-shadow: 0 0 4px 4px #016d9b;
   overflow: hidden;
   z-index: 1;
@@ -87,7 +79,7 @@ body {
   width: 100%;
   height: 100%;
   /* margin-bottom: 1000px; */
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .testimonial .name {
@@ -133,10 +125,17 @@ img {
 }
 
 #teamslider {
-  width: auto;
+  width: 80%;
+  height: auto;
+  margin-left: 7%;
+  margin-right: 5%;
   /* display: block; */
   /* margin-left: -250px; */
   /* margin: auto; */
 
   /* position: center; */
+}
+#teamheading
+{
+  font-family: 'Permanent Marker', cursive;
 }

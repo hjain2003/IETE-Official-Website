@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 *{
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(4, 93, 112);
+  border-radius: 10px;
 }
 .aboutiete
 {
@@ -15,7 +32,7 @@
   /* border: 2px solid black; */
   line-height: 70px;
   font-size: 30px;
-  color: rgb(115, 166, 217);
+  color: white;
   /* background-image: linear-gradient(to top, #264463, #243b52, #223241, #212931, #1e2022); */
   background-color: black;
 }
@@ -26,7 +43,7 @@
 }
 #ietehead:hover
 {
-  color: white;
+  color: rgb(115, 166, 217);
   cursor: pointer;
 }
 #starter
@@ -38,11 +55,15 @@
 {
   padding-left:20px;
 }
+.videocontainer
+{
+  height: 150px;
+}
 #myVideo
 {
   position: absolute;
   width: 100%;
-    height: 450px;
+    height: 600px;
     object-fit: cover;
     z-index: -100;
 }
@@ -53,6 +74,7 @@
   height: 100%;
   background: #1e1e1e;
   transition: all .5s ease;
+  z-index: 2;
 }
 .sidebar header{
   font-size: 28px;
@@ -66,6 +88,7 @@
 #btn,#cancel
 {
   position: fixed;
+  z-index: 2;
 }
 .sidebar a{
   display: block;
@@ -173,6 +196,7 @@ label #cancel{
   height: 950px;
   background-image: linear-gradient(to bottom, #191a1b, #182027, #162534, #132a41, #102f4f);
   color: white;
+  z-index: 1;
 }
 
 
@@ -189,12 +213,14 @@ label #cancel{
   background-color: rgb(16, 16, 53);
   color: black;
   padding: 20px;
-  padding-left:350px;
-  padding-right:350px;
+  padding-left:30px;
+  padding-right:30px;
+  z-index: 1;
 }
 
 #teamheading
 {
+  text-align: left;
   color: rgb(115, 166, 217);
   margin-left: 0px;
 }
@@ -207,11 +233,13 @@ label #cancel{
   background-color: black;
   color: white;
   padding:20px;
-  padding-left:200px;
-  padding-right:200px;
+  /* padding-left:200px; */
+  /* padding-right:200px; */
+  z-index: 1;
 }
 .header
 {
+  text-align: left;
   margin-left: 0px;
 }
 
@@ -228,6 +256,11 @@ label #cancel{
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(to right bottom, #42064d, #33114a, #261544, #1b173c, #131733);
+  background-image: url("https://media.istockphoto.com/vectors/vector-black-geometric-background-design-horizontal-geometrical-in-vector-id1136322848?k=20&m=1136322848&s=612x612&w=0&h=vqGqmIHLdEiNs4NNImPVQkBX9lHkynLm4bP5UI9KWC0=");
+  background-image: url('http://codex-themes.com/scalia/wp-content/uploads/2014/12/footer-background-011.jpg');
+  background-position: center;
+  opacity: 90%;
+  
 }
 #contact a
 {
@@ -246,7 +279,7 @@ label #cancel{
   height: 76px;
   line-height: 78px;
   font-size: 20px;
-  font-family: 'Bebas Neue', sans-serif;
+  /* font-family: 'Bebas Neue', sans-serif; */
   background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
   border: 0;
   color: #fff;
@@ -345,7 +378,9 @@ label #cancel{
 }
 .button-49
 {
-  margin-top: 50px;
+  margin-top: 30px;
+  /* margin-left: 1000px; */
+  font-family: 'Source Code Pro', monospace;
 }
 #handles
 {
@@ -356,6 +391,7 @@ label #cancel{
   flex-direction: row;
   /* margin: auto; */
   float: left;
+  margin-top: 10px;
   width: 150px;
   /* border: 2px solid white; */
 }
@@ -382,5 +418,6 @@ label #cancel{
 }
 #buttoncontainer
 {
+  display: flex;
   margin-top: 40px;
 }

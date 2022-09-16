@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Permanent+Marker&display=swap');
 #abtheading
 {
     font-size: 30px;
     margin-left: 30px;
     margin-top: -40px;
     color: rgb(115, 166, 217);
+    font-family: 'Permanent Marker', cursive;
+}
+#aboutus
+{
+    font-family: 'Permanent Marker', cursive;
 }
 #starter
 {
@@ -60,7 +66,8 @@
 {
     font-size: 30px;
     color: rgb(146, 194, 241);
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: 'Permanent Marker', cursive;
 }
 .image
 {

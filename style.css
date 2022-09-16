@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -17,6 +18,11 @@
   color: rgb(115, 166, 217);
   /* background-image: linear-gradient(to top, #264463, #243b52, #223241, #212931, #1e2022); */
   background-color: black;
+}
+#ietehead
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 #ietehead:hover
 {
@@ -218,7 +224,8 @@ label #cancel{
   background-color: white;
   color: black;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  flex-direction: column;
   align-items: center;
   background-image: linear-gradient(to right bottom, #42064d, #33114a, #261544, #1b173c, #131733);
 }
@@ -259,7 +266,7 @@ label #cancel{
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
   
-  content: 'ALTERNATE TEXT';
+  content: 'IETE';
   display: block;
   position: absolute;
   top: 0;
@@ -336,4 +343,44 @@ label #cancel{
   transform: scale(1.1);
   background-color: rgb(255,1,60);
 }
-
+.button-49
+{
+  margin-top: 50px;
+}
+#handles
+{
+  /* margin-top: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* margin: auto; */
+  float: left;
+  width: 150px;
+  /* border: 2px solid white; */
+}
+#handles a img
+{
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+}
+#handles a
+{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+#handles a img:hover
+{
+  transform: scale(1.2);
+}
+#handles a:hover
+{
+  text-decoration: none;
+  /* color: white; */
+}
+#buttoncontainer
+{
+  margin-top: 40px;
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="aboutus.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="projects.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="team.css">
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://use.fontawesome.com/96bf418d3c.js"></script>
+  <script src="https://kit.fontawesome.com/5ccc310212.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+
+  <!-------------------------------------------------NAVBAR AND VIDEO------------------------------>
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+    <header>Menu</header>
+    <a href="#" class="active">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="#aboutus">
+      <i class="far fa-question-circle"></i>
+      <span>About</span>
+    </a>
+    <a href="#ourteam">
+      <i class="fas fa-handshake"></i>
+      <span>Our team</span>
+    </a>
+    <a href="#projects">
+      <i class="fas fa-project-diagram"></i>
+      <span>Projects</span>
+    </a>
+    <a href="#contact">
+      <i class="far fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </div>
+
+  <div class="aboutiete">
+    <b><span id="ietehead">IETE Students' Forum</span></b>
+  </div>
+
+  <div class="videocontainer">
+    <video autoplay muted loop id="myVideo">
+      <source src="samplevideo.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+
+
+
+
+  <!-------------------------------ABOUT US-------------------->
+
+  <div id="aboutus">
+    <br>
+    <span id="abtheading" data-aos="fade-in"><b>ABOUT US</b></span>
+
+    <p id="starter" data-aos="fade-out">IETE is India's leading recognised, professional and national society devoted to
+      the advancement of Science & Technology. Its Patiala Chapter is looked after by the students of TIET, Patiala</p>
+    <br><br><br><br>
+    <div id="contain">
+      <div id="row1">
+
+        <div id="first" data-aos="fade-right" data-aos-duration="1000">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzEgMTcxIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzEuOTkyMnYtMTcxLjk5MjJoMTcxLjk5MjJ2MTcxLjk5MjJ6IiBmaWxsPSIjMTgyMjJiIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTgyLjgyODEzLDIuNjcxODh2MTAuNjg3NWg1LjM0Mzc1di0xMC42ODc1ek0xMTkuNTA5LDE1LjY1MDNsLTcuNTYxNjEsNy41NTY0bDMuNzc4MiwzLjc3ODJsNy41NjE2MSwtNy41NTY0ek01MS40OTEsMTUuNjU1NTJsLTMuNzc4MiwzLjc3ODJsNy41NTY0LDcuNTU2NGwzLjc4MzQyLC0zLjc3ODJ6TTg2LjYzMjQyLDIxLjM5MDY2Yy0xNi41NjA2NCwtMC42MTA0NiAtMzAuODY5MDYsMTEuNDc0MDcgLTMzLjAzODM2LDI3LjkwMzM1Yy0xLjA0NTY3LDEwLjM5Nzc2IDMuMzA5MTIsMjAuNjA2MjEgMTEuNTM4MTIsMjcuMDQ3NTJjMi43ODMxNSwyLjI3NTU0IDQuMzc5MTYsNS42OTQyIDQuMzM2NTgsOS4yODg5NHY1LjIxMzI5aDMyLjA2MjV2LTUuMjEzMjljLTAuMDAwNSwtMy42NjYwMyAxLjY1OTIsLTcuMTM1MDkgNC41MTQwMSwtOS40MzUwNmM3LjI0OTIyLC01Ljc3MDQ3IDExLjQ4NjAyLC0xNC41MjA1IDExLjUxNzI0LC0yMy43ODU5NWMtMC41NzI0MywtMTYuODU0MjggLTE0LjA3NzUxLC0zMC4zOTgxIC0zMC45MzAwOCwtMzEuMDE4OHpNODYuMjQxMDMsMzIuMDcyOTRjMS43NDExMiwwLjA1NTg3IDMuNDY5NzQsMC4zMTUwOCA1LjE1MDY2LDAuNzcyMzR2Mi41ODgzOGMtMC4wMTA5MywxLjA4NDA0IDAuNjEzNzMsMi4wNzQxMSAxLjU5Njg2LDIuNTMwOTdjMC45MTQ1NywwLjQxMjI0IDEuNzkyNjcsMC45MDEwNCAyLjYyNDkxLDEuNDYxMThjMC45MjcwNCwwLjU5NTQxIDIuMTA4ODksMC42MjM2IDMuMDYzMjYsMC4wNzMwNmwyLjMxNzAyLC0xLjI5NDE5YzIuODMzODMsMi42ODc1NiA0Ljg2OTI2LDYuMTA2NDQgNS44ODEyNiw5Ljg3ODYzbC00LjAwMjU5LDIuMjMzNTJjMC40MTA0OSwyLjA2MDIgMC40MTA0OSw0LjE4MTE0IDAsNi4yNDEzM2w0LjAwMjU5LDIuMjMzNTJjLTEuMDE1OSwzLjc3MTQ1IC0zLjA1NDk0LDcuMTg4NTEgLTUuODkxNjksOS44NzM0MWwtMi4zMDY1OCwtMS4yODg5N2MtMC45NTQ0NCwtMC41NTAyOSAtMi4xMzYxNSwtMC41MjIxIC0zLjA2MzI2LDAuMDczMDZjLTAuODMyMjEsMC41NjAxOSAtMS43MTAzMSwxLjA0OSAtMi42MjQ5MSwxLjQ2MTE4Yy0wLjk4MzE2LDAuNDU2ODMgLTEuNjA3ODQsMS40NDY5MiAtMS41OTY4NiwyLjUzMDk3djIuNTc3OTRjLTMuODU2MiwxLjA1NzA5IC03LjkyNTMyLDEuMDYwNjkgLTExLjc4MzM5LDAuMDEwNDR2LTIuNTg4MzhjMC4wMTA5NywtMS4wODQwNiAtMC42MTM3LC0yLjA3NDE1IC0xLjU5Njg2LC0yLjUzMDk3Yy0wLjkxNDYsLTAuNDEyMTkgLTEuNzkyNjksLTAuOTAxIC0yLjYyNDkxLC0xLjQ2MTE4Yy0wLjkyNzEyLC0wLjU5NTE3IC0yLjEwODgzLC0wLjYyMzM2IC0zLjA2MzI2LC0wLjA3MzA2bC0yLjMxNzAyLDEuMjk0MTljLTIuODMzODMsLTIuNjg3NTYgLTQuODY5MjYsLTYuMTA2NDQgLTUuODgxMjYsLTkuODc4NjNsNC4wMDI1OSwtMi4yMzM1MmMtMC40MTA1MywtMi4wNjAxOSAtMC40MTA1MywtNC4xODExNCAwLC02LjI0MTMzbC00LjAwMjU5LC0yLjIzMzUyYzEuMDE1ODMsLTMuNzcxNDggMy4wNTQ4OCwtNy4xODg1NiA1Ljg5MTY5LC05Ljg3MzQxbDIuMzA2NTgsMS4yODg5N2MwLjk1NDM5LDAuNTUwNDggMi4xMzYyLDAuNTIyMjkgMy4wNjMyNiwtMC4wNzMwNmMwLjgzMjIyLC0wLjU2MDE4IDEuNzEwMzIsLTEuMDQ4OTggMi42MjQ5MSwtMS40NjExOGMwLjk4MzEzLC0wLjQ1Njg3IDEuNjA3NzksLTEuNDQ2OTMgMS41OTY4NiwtMi41MzA5N3YtMi41Nzc5NGMyLjE1OTIzLC0wLjU5MTYgNC4zOTUwOSwtMC44NTU0NyA2LjYzMjcyLC0wLjc4Mjc4ek04NS41LDQzLjkzNDZjLTUuMjQ4MzEsMCAtOS41MDI5LDQuMjU0NTkgLTkuNTAyOSw5LjUwMjljMCw1LjI0ODMxIDQuMjU0NTksOS41MDI5IDkuNTAyOSw5LjUwMjljNS4yNDgzMSwwIDkuNTAyOSwtNC4yNTQ1OSA5LjUwMjksLTkuNTAyOWMwLC01LjI0ODMxIC00LjI1NDU5LC05LjUwMjkgLTkuNTAyOSwtOS41MDI5ek0zNC43MzQzOCw1MC43NjU2M3Y1LjM0Mzc1aDEwLjY4NzV2LTUuMzQzNzV6TTEyNS41NzgxMyw1MC43NjU2M3Y1LjM0Mzc1aDEwLjY4NzV2LTUuMzQzNzV6TTI0LjEyNTE1LDk2LjEyNDg4Yy01Ljc4NDA4LC0wLjAzNDE1IC0xMC45MzMxNiwzLjY1Nzg0IC0xMi43NTY5Myw5LjE0Njk4Yy0xLjgyMzc3LDUuNDg5MTQgMC4wOTIwNywxMS41Mjg0NiA0Ljc0NjUyLDE0Ljk2MjUyaC0wLjA4MzVjLTUuOTAyNTQsMCAtMTAuNjg3NSw0Ljc4NDk2IC0xMC42ODc1LDEwLjY4NzV2MzQuNzM0MzhoMzcuNDA2MjV2LTM0LjczNDM3YzAsLTUuOTAyNTQgLTQuNzg0OTYsLTEwLjY4NzUgLTEwLjY4NzUsLTEwLjY4NzVoLTAuMDgzNWM0LjYzMTI1LC0zLjQxNjk1IDYuNTUzNjIsLTkuNDE1ODUgNC43NzA5OCwtMTQuODg4MTZjLTEuNzgyNjUsLTUuNDcyMzEgLTYuODY5NTgsLTkuMTg3ODcgLTEyLjYyNDgzLC05LjIyMTM0ek0xNDcuMDMxNCw5Ni4xMjQ4OGMtNS43ODQwOCwtMC4wMzQxNSAtMTAuOTMzMTYsMy42NTc4NCAtMTIuNzU2OTMsOS4xNDY5OGMtMS44MjM3Nyw1LjQ4OTE0IDAuMDkyMDcsMTEuNTI4NDYgNC43NDY1MiwxNC45NjI1MmgtMC4wODM1Yy01LjkwMjU0LDAgLTEwLjY4NzUsNC43ODQ5NiAtMTAuNjg3NSwxMC42ODc1djM0LjczNDM4aDM3LjQwNjI1di0zNC43MzQzN2MwLC01LjkwMjU0IC00Ljc4NDk2LC0xMC42ODc1IC0xMC42ODc1LC0xMC42ODc1aC0wLjA4MzVjNC42MzEyNSwtMy40MTY5NSA2LjU1MzYyLC05LjQxNTg1IDQuNzcwOTgsLTE0Ljg4ODE2Yy0xLjc4MjY1LC01LjQ3MjMxIC02Ljg2OTU4LC05LjE4Nzg3IC0xMi42MjQ4MywtOS4yMjEzNHpNNjkuNDY4NzUsOTYuMTg3NXY1LjM0Mzc1aDMyLjA2MjV2LTUuMzQzNzV6TTI0LjA0Njg4LDEwNi44NzVjMi42OTk1NywwLjAxNTI3IDUuMzc0MjUsMC41MTczMiA3Ljg5NTYsMS40ODIwNmMwLjA2OTk1LDAuMzkzMDEgMC4xMTAwNywwLjc5MDc1IDAuMTIwMDMsMS4xODk4MmMwLDQuNDI2OTEgLTMuNTg4NzIsOC4wMTU2MyAtOC4wMTU2Miw4LjAxNTYzYy00LjQyNjkxLDAgLTguMDE1NjIsLTMuNTg4NzIgLTguMDE1NjIsLTguMDE1NjJjMC4wMDk5NSwtMC4zOTkwNiAwLjA1MDA4LC0wLjc5NjgxIDAuMTIwMDMsLTEuMTg5ODJjMi41MjEzNSwtMC45NjQ3MyA1LjE5NjAzLC0xLjQ2Njc5IDcuODk1NiwtMS40ODIwNnpNNzAuNTAyMDEsMTA2Ljg3NWMyLjE4ODAyLDQuOTE2NjggNy4wODU2OCw4LjA2NTYyIDEyLjQ2NzAxLDguMDE1NjNoNS4wNjE5NWM1LjM4MTMzLDAuMDUgMTAuMjc4OTksLTMuMDk4OTQgMTIuNDY3MDEsLTguMDE1NjJ6TTE0Ny41NzQxMywxMDYuODg1NDRjMi40OTEyNiwwLjA3MDI2IDQuOTUxOTIsMC41NjgwNCA3LjI3NDYsMS40NzE2MmMwLjA2OTk1LDAuMzkzMDEgMC4xMTAwNywwLjc5MDc1IDAuMTIwMDMsMS4xODk4MmMtMC4wMDQ4Myw0LjQyNDkxIC0zLjU5MDcyLDguMDEwOCAtOC4wMTU2Miw4LjAxNTYzYy00LjQyNDkxLC0wLjAwNDgzIC04LjAxMDgsLTMuNTkwNzIgLTguMDE1NjIsLTguMDE1NjJjMC4wMDk5NSwtMC4zOTkwNiAwLjA1MDA4LC0wLjc5NjgxIDAuMTIwMDMsLTEuMTg5ODJjMi43MTE4OSwtMS4wNTUxNSA1LjYwNzg5LC0xLjU1NTU2IDguNTE2NiwtMS40NzE2MnpNMjMuMzA1ODUsMTIyLjgzMzE5YzAuMjUwNjUsMC4wMTQwMyAwLjQ4Njk2LDAuMDczMDYgMC43NDEwMywwLjA3MzA2YzAuMjU0MDcsMCAwLjQ5MDM4LC0wLjA1OTAzIDAuNzQxMDMsLTAuMDczMDZsNC42MDI3MiwxOC43NzYxOGwtNS4zNDM3NSwxMC42ODc1bC01LjM0Mzc1LC0xMC42ODc1ek0xNDYuMjEyMSwxMjIuODMzMTljMC4yNTA2NSwwLjAxNDAzIDAuNDg2OTYsMC4wNzMwNiAwLjc0MTAzLDAuMDczMDZjMC4yNTQwNywwIDAuNDkwMzgsLTAuMDU5MDMgMC43NDEwMywtMC4wNzMwNmw0LjYwMjcyLDE4Ljc3NjE4bC01LjM0Mzc1LDEwLjY4NzVsLTUuMzQzNzUsLTEwLjY4NzV6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="
+            class="image">
+          <span class="starting">Workshops</span>
+          <br><br>We understand that school didn't really make it all that easy for you to gain tech skills outside of
+          your textbooks. Which is why throughout the first year we conduct a myriad of workshops, ranging from
+          web-development and machine learning to basics of micro-controllers like arduino.
+        </div>
+
+        <div id="second" data-aos="fade-left" data-aos-duration="1000">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzEgMTcxIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzEuOTkyMnYtMTcxLjk5MjJoMTcxLjk5MjJ2MTcxLjk5MjJ6IiBmaWxsPSIjMTgyMjJiIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTI2LjQ2MzI3LDBjLTcuMTk2NjIsMCAtMTMuMDUxOCw1Ljg1NTE4IC0xMy4wNTE4LDEzLjA1MThjMCw3LjE5NjYyIDUuODU1MTgsMTMuMDUxMDggMTMuMDUxOCwxMy4wNTEwOGg5Ni44NTY5Yy00LjkxNjYyLC03LjkwNTgzIC00LjkxNjYyLC0xOC4xOTcwNSAwLC0yNi4xMDI4OHpNMTQ0LjI4MDU0LDAuMDAyODVjLTcuMTQxODEsMC4wNTU5IC0xMi45NDY4OSw1LjkwMzExIC0xMi45NDY4OSwxMy4wNDg5NGMwLDcuMTk2NjIgNS44NTQ4MywxMy4wNTEwOCAxMy4wNTEwOCwxMy4wNTEwOGMzLjI0MDk2LDAgNS44Njc1NywyLjYyNjYgNS44Njc1Nyw1Ljg2NzU2YzAsMy4yNDA5NiAtMi42MjY2LDUuODY4MjggLTUuODY3NTcsNS44NjgyOGgtMTEyLjI4MDEydjEzMy4xNjEyOGgxMjUuNDgzOTJ2LTE1Ny41ODg1M2MwLC03LjM0Mzg3IC01Ljk2NzQxLC0xMy4zNTE5OCAtMTMuMzA3OTksLTEzLjQwODYyek04MC45NjI2Niw1MC43MTI4MmgyNy41MTUxOGMzLjI0MDk2LDAgNS44Njc1NiwyLjYyNjYgNS44Njc1Niw1Ljg2NzU2djI4LjIzNjY3YzAsMy4yNDA5NiAtMi42MjY2LDUuODY3NTYgLTUuODY3NTYsNS44Njc1NmgtNy43NDk0NHY4LjU1NDQyaDI2LjM2MTkzYzMuMjQwOTYsMCA1Ljg2NzU3LDIuNjI2NiA1Ljg2NzU3LDUuODY3NTd2MTIuOTI5MDVoNy44ODkzMWMzLjI0MDk2LDAgNS44Njc1NywyLjYyNjYgNS44Njc1Nyw1Ljg2NzU3djI4LjIzNjY2aDAuMDAwNzFjMCwzLjI0MDk2IC0yLjYyNjYsNS44Njc1NyAtNS44Njc1Niw1Ljg2NzU3aC0yNy41MTQ0NmMtMy4yNDA5NiwwIC01Ljg2ODI4LC0yLjYyNjYgLTUuODY4MjgsLTUuODY3NTd2LTI4LjIzNjY2YzAsLTMuMjQwOTYgMi42MjczMiwtNS44Njc1NyA1Ljg2ODI4LC01Ljg2NzU3aDcuODg5MzF2LTcuMDYxNDloLTUzLjAwNDMydjcuMDYxNDloNy44ODkzMWMzLjI0MDYsMCA1Ljg2NzU3LDIuNjI2NiA1Ljg2NzU3LDUuODY3NTd2MjguMjM2NjZjMCwzLjI0MDk2IC0yLjYyNjk3LDUuODY3NTcgLTUuODY3NTcsNS44Njc1N2gtMjcuNTE0NDZjLTMuMjQwNiwwIC01Ljg2NzU3LC0yLjYyNjYgLTUuODY3NTcsLTUuODY3NTd2LTI4LjIzNjY2YzAsLTMuMjQwOTYgMi42MjY5NywtNS44Njc1NyA1Ljg2NzU3LC01Ljg2NzU3aDcuODg5MzF2LTEyLjkyOTA1YzAsLTMuMjQwOTYgMi42MjY5NywtNS44Njc1NyA1Ljg2NzU3LC01Ljg2NzU3aDI2LjY0MjM5di04LjU1NDQyaC04LjAyOTljLTMuMjQwNiwwIC01Ljg2NzU2LC0yLjYyNjYgLTUuODY3NTYsLTUuODY3NTZ2LTI4LjIzNjY3YzAsLTMuMjQwOTYgMi42MjY5NywtNS44Njc1NiA1Ljg2NzU2LC01Ljg2NzU2ek04Ni44MzA5NCw2Mi40NDg2NnYxNi41MDA4M2gxNS43NzkzM3YtMTYuNTAwODN6TTU0LjQ2MTU3LDEyOS43NzA3N3YxNi41MDE1NGgxNS43Nzg2MnYtMTYuNTAxNTR6TTExOS4yMDEwMiwxMjkuNzcwNzd2MTYuNTAxNTRoMTUuNzc5MzN2LTE2LjUwMTU0eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+            alt="" class="image">
+          <span class="starting">Projects</span><br><br>Projects are important! We know you have it in you to crack
+          those written exams but how are you going to differentiate yourself from the rest of the herd? Which is where
+          projects come in, we have a bunch of live projects that you can contribute to and learn from as a member.
+        </div>
+      </div>
+
+      &nbsp;&nbsp;<br>
+      <div id="row2">
+        <div id="third" data-aos="fade-right" data-aos-duration="1000">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzEgMTcxIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzEuOTkyMnYtMTcxLjk5MjJoMTcxLjk5MjJ2MTcxLjk5MjJ6IiBmaWxsPSIjMTQyODNiIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTg1LjUsMTcuMWMtMzcuNzczOSwwIC02OC40LDMwLjYyNjEgLTY4LjQsNjguNGMwLDM3Ljc3MzkgMzAuNjI2MSw2OC40IDY4LjQsNjguNGMzNy43NzM5LDAgNjguNCwtMzAuNjI2MSA2OC40LC02OC40YzAsLTM3Ljc3MzkgLTMwLjYyNjEsLTY4LjQgLTY4LjQsLTY4LjR6TTEwNi42MTI4LDY0LjM4NzJoLTE1LjgwMDR2MC43MTI1YzIuMTMxOCwxLjM4NTEgMy42NzY1LDMuNzEwNyA0LjA2OTgsNi4yMDE2aDExLjczMDZ2Ny41NDY4aC0xMS40MTcxYy0wLjc1MjQsNy40MjcxIC03LjIyNzYsMTMuMTE1NyAtMTUuNTYxLDEzLjc4ODNoLTAuNTEzbDE3LjczMjcsMjEuMzYzNmgtMTMuNTQ4OWwtMTguOTE4MywtMjMuMTg3NnYtNS4yMTU1aDkuMzE5NWM1Ljc2ODQsMCA5Ljk5MjEsLTIuNzI0NiAxMC42NjQ3LC02Ljc1NDVoLTE5LjkwNDR2LTcuNTQ2OGgxOS44MzAzYy0wLjYzMjcsLTMuODcwMyAtNC4zMDM1LC02LjQ0MSAtOS4yODUzLC02LjQ0MWgtMTAuNTg0OXYtNy44NTQ2aDQyLjE4NTd6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="
+            alt="" class="image">
+          <span class="starting">Funding</span><br><br>Wanted to build a cool bot but can't really afford the
+          components? Don't worry we have you covered!
+        </div>
+
+        <div id="fourth" data-aos="fade-left" data-aos-duration="1000">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzEgMTcxIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzEuOTkyMnYtMTcxLjk5MjJoMTcxLjk5MjJ2MTcxLjk5MjJ6IiBmaWxsPSIjMTQyODMzIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTQ0LjM5MzIsMTAuMjZjLTExLjYzNDg0LDAuMjEyMDQgLTE2LjgxMTIyLDYuNTQ2NDEgLTE3LjAxOTg0LDE1LjA4MjczYy0wLjA4MjA4LDMuMzk2MDYgMC40ODA1MSw2LjIxMDY3IDEuNDk2MjUsMTAuMTE5NzNjLTAuNjMyNywwLjM4OTg4IC0xLjY3NjAxLDEuNjIyMiAtMS40MTYwOSwzLjgwMDc0YzAuNDg5MDYsNC4wNjI5NiAyLjE1Mjg5LDUuMDg3ODQgMy4yMDYyNSw1LjE3Njc2YzAuNDAzNTYsMy43ODkzNiA1LjYxNjE3LDkuNTU1NDggNi45NjAyMywxMC4yNmMwLDIuNzA4NjQgMC4wOTk3Nyw0Ljc3NjYxIC0wLjE2Njk5LDcuNzQxNzVjLTMuMDIzMjgsOC4xMzYxOCAtMjcuNDg4NDEsNy41NTU4NSAtMzAuNTU5NTcsMjEuMTg3OTdsLTAuMDUzNDQsMS44MTY4N2MtMC4wMzA3OCwxLjkxMTc4IDEuNTExNjQsMy40NzM0NCAzLjQyLDMuNDczNDRoMTEuNzk2MzNjMy4xNjM1LC04LjM5OTUyIDExLjEwMTgsLTEzLjQ3NDggMjIuMjA5OTYsLTEzLjY4aDAuMDY2OGgwLjA2MDEyYzYuMTYyODQsMCA5Ljg4MDkxLDEuODkwMyAxMi4wOTAyMywzLjg4NzU4YzIuNjc0NDQsMC43OTY4NiA0Ljk0NjYsMi4yMDA0NSA2Ljc4NjU2LDQuMDc0NjFjLTAuNzQ4OTgsLTEuNDkxMTIgLTEuMzA2MzksLTMuMzA4NDIgLTEuNTY5NzMsLTUuNTA0MDZjLTAuMjc3MDIsLTIuMzE1MzQgMC4xMDMwOCwtNC4zMjY0NiAwLjgzNDk2LC01Ljk3ODMyYy0wLjE4ODEsLTAuODQ0NzQgLTAuMjg0MDIsLTEuNjI3NyAtMC40MjA4MiwtMi40MzE0Yy01LjA2MTYsLTEuODc0MTYgLTkuMzg0NTksLTMuNzM0NDggLTEwLjU0MDU1LC02Ljg0NjY4aC0wLjA4NjgzYy0wLjI2Njc2LC0yLjk2MTcyIC0wLjE2MDMyLC01LjAzNjUzIC0wLjE2MDMyLC03Ljc0MTc1YzEuMzQ0MDYsLTAuNzA0NTIgNi41OTAwNywtNi40NzA2NCA2Ljk5MzYzLC0xMC4yNmMxLjA1Njc4LC0wLjA4NTUgMi43MTA1MSwtMS4xMTAzOCAzLjE5OTU3LC01LjE3Njc2YzAuMjYzMzQsLTIuMTgxOTYgLTAuNzc5OTcsLTMuNDE0MjggLTEuNDE2MDksLTMuODAwNzRjMC43MzUzLC0yLjIxOTU4IDEuNDA0ODcsLTUuNDgyMjEgMS40NTYxNywtOS42OTIyM2MwLjA2NDk4LC01LjU5ODU0IC0xLjk3NTM3LC0xMS4zMzY3NyAtOC43NTAzOSwtMTIuMjc3MjdjLTEuMjIwOTQsLTIuMTQ3NzYgLTQuMzQ2NiwtMy4yMzI5NyAtOC40MTY0LC0zLjIzMjk3ek0xMjYuNDczMiwxMC4yNmMtMTEuNjM0ODQsMC4yMTIwNCAtMTYuODE3OSw2LjU0NjQxIC0xNy4wMjY1MiwxNS4wODI3M2MtMC4wODIwOCwzLjM5NjA2IDAuNDgwNTEsNi4yMTA2NyAxLjQ5NjI1LDEwLjExOTczYy0wLjYzMjcsMC4zODk4OCAtMS42NzYwMSwxLjYyMjIgLTEuNDE2MDksMy44MDA3NGMwLjQ4OTA2LDQuMDYyOTYgMi4xNTI4OSw1LjA4Nzg0IDMuMjA2MjUsNS4xNzY3NmMwLjQwMzU2LDMuNzg5MzYgNS42MTYxNyw5LjU1NTQ4IDYuOTYwMjMsMTAuMjZjMCwyLjcwODY0IDAuMDk5NzcsNC43NzY2MSAtMC4xNjY5OSw3Ljc0MTc1Yy0xLjE1OTM4LDMuMTIyNDYgLTUuNDgyNTMsNC45NDY2IC0xMC41MzM4Nyw2Ljc4NjU3Yy0wLjEyOTk2LDAuOTE5OTggLTAuMjc2NywxLjc5NTM0IC0wLjQ0MDg2LDIuNTcxNjhjMC43MDc5NCwxLjYzNDc2IDEuMDcxOSwzLjYyMDQ0IDAuNzk0ODgsNS44OTgxNmMtMC4yMjU3MiwxLjg2NzMyIC0wLjY4NzU4LDMuNDE0OTggLTEuMjc1ODIsNC43NjkzYzQuMTI0NTIsLTQuNDgzNjIgMTAuNDAyNzgsLTcuMDc3MSAxOC4yNzU2MiwtNy4yMjA3NGgwLjA2MDEyaDAuMDYwMTJjNi4xNjI4NCwwIDkuODg3NTksMS44ODM2MiAxMi4wOTY5MSwzLjg4MDljNC45MjgyMiwxLjQ2NzE4IDguNTE5MTEsNC45NDYxMiAxMC40MDY5NSw5Ljc5OTFoMTEuNzY5NjFjMS44ODc4NCwwIDMuNDIsLTEuNTMyMTYgMy40MiwtMy40MnYtMS45MzA0M2MtMy4wNzQ1OCwtMTMuNjM1NTQgLTI3LjQ3OTQzLC0xMy4wMDUwMyAtMzAuNTA2MTMsLTIxLjE0MTIxaC0wLjA5MzUyYy0wLjI2Njc2LC0yLjk2MTcyIC0wLjE2MDMxLC01LjAyOTg2IC0wLjE2MDMxLC03LjczNTA4YzEuMzQ0MDYsLTAuNzA0NTIgNi41OTAwNywtNi40NzA2NCA2Ljk5MzYzLC0xMC4yNmMxLjA1Njc4LC0wLjA4NTUgMi43MTA1MSwtMS4xMTcwNiAzLjE5OTU3LC01LjE4MzQ0YzAuMjYzMzQsLTIuMTgxOTYgLTAuNzc5OTcsLTMuNDA3NiAtMS40MTYwOSwtMy43OTQwNmMwLjc0MjE0LC0yLjIxNjE2IDEuNDExNTUsLTUuNDgyMjEgMS40NjI4NSwtOS42OTIyM2MwLjA2NDk4LC01LjU5ODU0IC0xLjk3NTM3LC0xMS4zMzY3NyAtOC43NTAzOSwtMTIuMjc3MjdjLTEuMjIwOTQsLTIuMTQ3NzYgLTQuMzUwMDIsLTMuMjMyOTcgLTguNDE2NCwtMy4yMzI5N3pNODUuNDMzMiw0Ny44OGMtMTEuNjM0ODQsMC4yMTIwNCAtMTYuODE3OSw2LjU0NjQxIC0xNy4wMjY1MiwxNS4wODI3M2MtMC4wODIwOCwzLjM5NjA2IDAuNDgwNTEsNi4yMTA2NyAxLjQ5NjI1LDEwLjExOTczYy0wLjYzMjcsMC4zODk4OCAtMS42NzYwMSwxLjYyMjIgLTEuNDE2MDksMy44MDA3NGMwLjQ4OTA2LDQuMDYyOTYgMi4xNTI4OSw1LjA4Nzg0IDMuMjA2MjUsNS4xNzY3NmMwLjQwMzU2LDMuNzg5MzYgNS42MTYxNyw5LjU1NTQ4IDYuOTYwMjMsMTAuMjZjMCwyLjcwODY0IDAuMDk5NzcsNC43NzY2MSAtMC4xNjY5OSw3Ljc0MTc1Yy0xLjE2OTY0LDMuMTQ2NCAtNS41NDQ3OCw0Ljk4OTQ2IC0xMC42NDc0Miw2Ljg1MzM2YzAuNDc1MzgsMS40NDY2NiAwLjY5MzMsMy4xMDU0NyAwLjQ2NzU4LDQuOTgzMDVjLTAuNTIzMjYsNC4zNTAyNCAtMi4xODk0NCw3LjIzNjQgLTQuMjQ4MjgsOC45OTA4NmMtMS4zNTQzMiwzLjI3Mjk0IC0zLjczOTUsNi40Mzk5MSAtNS45MjQ4OCw4LjY5MDI3Yy0wLjAwMzQyLDAuNzY2MDggMC4wMDU4OCwxLjQ5NTA3IDAuMDQwMDgsMi4yNTc3M2MxLjQ1MDA4LDEuMDY3MDQgNS4zNTEyOCwyLjQ2NTY2IDguMDIyMywzLjQyNjY4YzYuNDI2MTgsMi4zMDg1IDE0LjY0ODcxLDUuMjc4NCAxOS4zNDQzOCwxMS42MjkzNGM0LjcwNTkyLC02LjMyMDE2IDEyLjkxODM2LC05LjI5Mzk2IDE5LjMzNzcsLTExLjYwOTNjMi42MjY1NiwtMC45NDczNCA2LjQzMzYxLC0yLjMxNjMgNy45NTU1MSwtMy4zNzk5MmMwLjAzNDIsLTAuNzkzNDQgMC4wNDM1LC0xLjU0Nzg3IDAuMDQwMDgsLTIuMzM3ODljLTIuMTcxNywtMi4yNTAzNiAtNC41NDQsLTUuNDA3MjQgLTUuODkxNDgsLTguNjgzNmMtMi4wNTU0MiwtMS43NTQ0NiAtMy43MTgzNCwtNC42NDQwNCAtNC4yNDE2LC04Ljk5MDg2Yy0wLjIyNTcyLC0xLjg4Nzg0IC0wLjAwMTI4LC0zLjU1NjI3IDAuNDgwOTQsLTUuMDA5NzdjLTUuMDgyMTIsLTEuODUzNjQgLTkuNDM3NzEsLTMuNjg3MDggLTEwLjYwNzM1LC02LjgyNjY0aC0wLjA5MzUyYy0wLjI2Njc2LC0yLjk2MTcyIC0wLjE2MDMxLC01LjAyOTg2IC0wLjE2MDMxLC03LjczNTA4YzEuMzQ0MDYsLTAuNzA0NTIgNi41OTAwNywtNi40NzA2NCA2Ljk5MzYzLC0xMC4yNmMxLjA1Njc4LC0wLjA4NTUgMi43MTA1MSwtMS4xMTcwNiAzLjE5OTU3LC01LjE4MzQ0YzAuMjYzMzQsLTIuMTgxOTYgLTAuNzc5OTcsLTMuNDA3NiAtMS40MTYwOSwtMy43OTQwNmMwLjczODcyLC0yLjIxNjE2IDEuNDA0ODcsLTUuNDc4NzkgMS40NTYxNywtOS42OTIyM2MwLjA2NDk4LC01LjU5ODU0IC0xLjk3NTM3LC0xMS4zNDM0NSAtOC43NTAzOSwtMTIuMjgzOTVjLTEuMjE3NTIsLTIuMTQ0MzQgLTQuMzQzMzUsLTMuMjI2MjkgLTguNDA5NzMsLTMuMjI2Mjl6TTQ0LjM5MzIsODIuMDhjLTExLjYzNDg0LDAuMjEyMDQgLTE2LjgxNzksNi41NDY0MSAtMTcuMDI2NTIsMTUuMDgyNzNjLTAuMDgyMDgsMy4zOTYwNiAwLjQ4MDUxLDYuMjEwNjcgMS40OTYyNSwxMC4xMTk3M2MtMC42MzI3LDAuMzg5ODggLTEuNjc2MDEsMS42MjIyIC0xLjQxNjA5LDMuODAwNzRjMC40ODkwNiw0LjA2Mjk2IDIuMTUyODksNS4wODc4NCAzLjIwNjI1LDUuMTc2NzZjMC40MDM1NiwzLjc4OTM2IDUuNjE2MTcsOS41NTU0OCA2Ljk2MDIzLDEwLjI2YzAsMi43MDg2NCAwLjA5OTc3LDQuNzc2NjIgLTAuMTY2OTksNy43NDE3NWMtMy4wMjMyOCw4LjEzNjE4IC0yNy40ODE3Myw3LjU1MjQzIC0zMC41NTI4OSwyMS4xODc5N2wtMC4wNTM0NCwxLjgxNjg3Yy0wLjAzMDc4LDEuOTExNzggMS41MTE2NCwzLjQ3MzQ0IDMuNDIsMy40NzM0NGg2OC40YzEuODg3ODQsMCAzLjQyLC0xLjUzMjE2IDMuNDIsLTMuNDJ2LTEuOTIzNzVjLTMuMDc0NTgsLTEzLjYzNTU0IC0yNy40Nzk0MywtMTMuMDA1MDMgLTMwLjUwNjEzLC0yMS4xNDEyMWgtMC4wOTM1MmMtMC4yNjY3NiwtMi45NjE3MiAtMC4xNjAzMSwtNS4wMjk4NiAtMC4xNjAzMSwtNy43MzUwOGMxLjM0NDA2LC0wLjcwNDUyIDYuNTkwMDcsLTYuNDcwNjQgNi45OTM2MywtMTAuMjZjMS4wNTY3OCwtMC4wODU1IDIuNzEwNTEsLTEuMTE3MDYgMy4xOTk1NywtNS4xODM0NGMwLjI2MzM0LC0yLjE4MTk2IC0wLjc3OTk3LC0zLjQwNzYgLTEuNDE2MDksLTMuNzk0MDZjMC43Mzg3MiwtMi4yMTYxNiAxLjQwNDg3LC01LjQ3ODc5IDEuNDU2MTcsLTkuNjkyMjNjMC4wNjQ5OCwtNS41OTg1NCAtMS45NzUzNywtMTEuMzQzNDUgLTguNzUwMzksLTEyLjI4Mzk1Yy0xLjIxNzUyLC0yLjE0NDM0IC00LjMzOTkzLC0zLjIyNjI5IC04LjQwOTczLC0zLjIyNjI5ek0xMjYuNDczMiw4Mi4wOGMtMTEuNjM0ODQsMC4yMTIwNCAtMTYuODE3OSw2LjU0NjQxIC0xNy4wMjY1MiwxNS4wODI3M2MtMC4wODIwOCwzLjM5NjA2IDAuNDgwNTEsNi4yMTA2NyAxLjQ5NjI1LDEwLjExOTczYy0wLjYzMjcsMC4zODk4OCAtMS42NzYwMSwxLjYyMjIgLTEuNDE2MDksMy44MDA3NGMwLjQ4OTA2LDQuMDYyOTYgMi4xNTI4OSw1LjA4Nzg0IDMuMjA2MjUsNS4xNzY3NmMwLjQwMzU2LDMuNzg5MzYgNS42MTYxNyw5LjU1NTQ4IDYuOTYwMjMsMTAuMjZjMCwyLjcwODY0IDAuMDk5NzcsNC43NzY2MiAtMC4xNjY5OSw3Ljc0MTc1Yy0zLjAyMzI4LDguMTM2MTggLTI3LjQ4MTczLDcuNTUyNDMgLTMwLjU1Mjg5LDIxLjE4Nzk3bC0wLjA1MzQ0LDEuODcwMzFjLTAuMDMwNzgsMS45MDgzNiAxLjUxMTY0LDMuNDIgMy40MiwzLjQyaDY4LjRjMS44ODc4NCwwIDMuNDIsLTEuNTMyMTYgMy40MiwtMy40MnYtMS45MjM3NWMtMy4wNzQ1OCwtMTMuNjM1NTQgLTI3LjQ3OTQzLC0xMy4wMDUwMyAtMzAuNTA2MTMsLTIxLjE0MTIxaC0wLjA5MzUyYy0wLjI2Njc2LC0yLjk2MTcyIC0wLjE2MDMxLC01LjAyOTg2IC0wLjE2MDMxLC03LjczNTA4YzEuMzQ0MDYsLTAuNzA0NTIgNi41OTAwNywtNi40NzA2NCA2Ljk5MzYzLC0xMC4yNmMxLjA1Njc4LC0wLjA4NTUgMi43MTA1MSwtMS4xMTcwNiAzLjE5OTU3LC01LjE4MzQ0YzAuMjYzMzQsLTIuMTgxOTYgLTAuNzc5OTcsLTMuNDA3NiAtMS40MTYwOSwtMy43OTQwNmMwLjczODcyLC0yLjIxNjE2IDEuNDA0ODcsLTUuNDc4NzkgMS40NTYxNywtOS42OTIyM2MwLjA2NDk4LC01LjU5ODU0IC0xLjk3NTM3LC0xMS4zNDM0NSAtOC43NTAzOSwtMTIuMjgzOTVjLTEuMjE3NTIsLTIuMTQ0MzQgLTQuMzQzMzUsLTMuMjI2MjkgLTguNDA5NzMsLTMuMjI2Mjl6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="
+            alt="" class="image">
+          <span class="starting">People</span><br><br>A like minded peer group is at the fore front of what we offer,
+          from attending hackathons together or staying up all night trying to debug a circuit building real world
+          connections is what we're all about.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------------------OUR TEAM----------------------->
+  <div id="ourteam">
+    <h1 id="teamheading" data-aos="slide-right">OUR TEAM </h1>
+    <div class="container">
+
+
+      <div class="main-carousel" data-flickity='{ "autoPlay":true, "wrapAround":true , "groupCells":true }'
+        id="teamslider" data-aos="fade-in" data-aos-duration="2000">
+        <!-- agar bg ko lazy load ya fade karna hai toh aalag sei ek plugin hai  -->
+        <div class="carousel-cell">
+          <div class="testimonial">
+            <span class="icon fa fa-quote-left"></span>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <div class="testimonial-content">
+              <div class="pic">
+                <img src="images/Karamjit.png" alt="" />
+              </div>
+              <h3 class="name">Karamjit Singh</h3>
+              <span class="title">General Secretary</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="testimonial">
+            <span class="icon fa fa-quote-left"></span>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <div class="testimonial-content">
+              <div class="pic">
+                <img src="images/Garima.png" alt="" />
+              </div>
+              <h3 class="name">Garima Gupta</h3>
+              <span class="title">General Secretary</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="testimonial">
+            <span class="icon fa fa-quote-left"></span>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <div class="testimonial-content">
+              <div class="pic">
+                <img src="images/Hardik.png" alt="" />
+              </div>
+              <h3 class="name">Hardik</h3>
+              <span class="title">Technical Head</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="testimonial">
+            <span class="icon fa fa-quote-left"></span>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <div class="testimonial-content">
+              <div class="pic">
+                <img src="images/Lavneesh.png" alt="" />
+              </div>
+              <h3 class="name">Lavneesh Garg</h3>
+              <span class="title">Joint Secretary</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="testimonial">
+            <span class="icon fa fa-quote-left"></span>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <div class="testimonial-content">
+              <div class="pic">
+                <img src="images/Tisha.png" alt="" />
+              </div>
+              <h3 class="name">Tisha</h3>
+              <span class="title">Marketing Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="testimonial">
+            <span class="icon fa fa-quote-left"></span>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <div class="testimonial-content">
+              <div class="pic">
+                <img src="images/Prerna.jpg" alt="" />
+              </div>
+              <h3 class="name">Prerna Kakkar</h3>
+              <span class="title">Joint Secretary</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="testimonial">
+            <span class="icon fa fa-quote-left"></span>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <div class="testimonial-content">
+              <div class="pic">
+                <img src="https://picsum.photos/130/130?image=839" alt="" />
+              </div>
+              <h3 class="name">Patricia Knott</h3>
+              <span class="title">Web Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------PROJECTS------------------------>
+  <div id="projects">
+    <span class="header" data-aos="slide-right" data-aos-duration="2000">OUR PROJECTS</span>
+    <br><br>
+    <div class="main-carousel" data-flickity='{ "autoPlay":3000 ,"wrapAround": true,"fade": true ,"groupCells": true }' data-aos="zoom-in">
+      <div class="carousel-cell" id="p1">
+        <div class="showcase">
+          <div class="thumbnail thumbnail--awesome">
+            <div class="thumbnail__overlay">
+              <a class="btn" href="#0">DETAILS</a>
+            </div>
+          </div>
+          <div class="desc">
+            <p>Case Study</p>
+            <h2>Awesome Project</h2>
+            <p>This project is awesome!</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell" id="p2">
+        <div class="showcase showcase--inverted">
+          <div class="desc">
+            <p>Case Study</p>
+            <h2>Inverted Project</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut l
+            </p>
+          </div>
+          <div class="thumbnail">
+            <div class="thumbnail__overlay">
+              <a class="btn" href="#0">DETAILS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell" id="p3">
+        <div class="showcase">
+          <div class="thumbnail">
+            <div class="thumbnail__overlay">
+              <a class="btn" href="#0">DETAILS</a>
+            </div>
+          </div>
+          <div class="desc">
+            <p>Case Study</p>
+            <h2>Awesome Project 2</h2>
+            <p>This project is even more awesome!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------------------------CONTACT US-------------------------->
+  <div id="contact">
+    <div id="buttoncontainer">
+    <button class="button-49" role="button" data-aos="slide-right" data-aos-duration="1000"><a href="contact.html" target="_blank">Contact Us</a></button>
+      </div>
+    <br>
+    <div id="handles">
+     <a href="https://www.instagram.com/iete_thapar/?utm_medium=copy_link" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzEgMTcxIj48ZyB0cmFuc2Zvcm09IiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcxLjk5MjJ2LTE3MS45OTIyaDE3MS45OTIydjE3MS45OTIyeiIgZmlsbD0iIzFmMTYzZiI+PC9wYXRoPjxwYXRoIGQ9IiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM3M2E2ZDkiPjxwYXRoIGQ9Ik01NywyMS4zNzVjLTE5LjY0MzYyLDAgLTM1LjYyNSwxNS45ODEzOCAtMzUuNjI1LDM1LjYyNXY1N2MwLDE5LjY0MzYzIDE1Ljk4MTM4LDM1LjYyNSAzNS42MjUsMzUuNjI1aDU3YzE5LjY0MzYzLDAgMzUuNjI1LC0xNS45ODEzNyAzNS42MjUsLTM1LjYyNXYtNTdjMCwtMTkuNjQzNjIgLTE1Ljk4MTM3LC0zNS42MjUgLTM1LjYyNSwtMzUuNjI1ek01NywzNS42MjVoNTdjMTEuNzg0NzUsMCAyMS4zNzUsOS41OTAyNSAyMS4zNzUsMjEuMzc1djU3YzAsMTEuNzg0NzUgLTkuNTkwMjUsMjEuMzc1IC0yMS4zNzUsMjEuMzc1aC01N2MtMTEuNzg0NzUsMCAtMjEuMzc1LC05LjU5MDI1IC0yMS4zNzUsLTIxLjM3NXYtNTdjMCwtMTEuNzg0NzUgOS41OTAyNSwtMjEuMzc1IDIxLjM3NSwtMjEuMzc1ek0xMjEuMTI1LDQyLjc1Yy0zLjkzNTAzLDAgLTcuMTI1LDMuMTg5OTcgLTcuMTI1LDcuMTI1YzAsMy45MzUwMyAzLjE4OTk3LDcuMTI1IDcuMTI1LDcuMTI1YzMuOTM1MDMsMCA3LjEyNSwtMy4xODk5NyA3LjEyNSwtNy4xMjVjMCwtMy45MzUwMyAtMy4xODk5NywtNy4xMjUgLTcuMTI1LC03LjEyNXpNODUuNSw0OS44NzVjLTE5LjY0MzYyLDAgLTM1LjYyNSwxNS45ODEzOCAtMzUuNjI1LDM1LjYyNWMwLDE5LjY0MzYzIDE1Ljk4MTM4LDM1LjYyNSAzNS42MjUsMzUuNjI1YzE5LjY0MzYzLDAgMzUuNjI1LC0xNS45ODEzNyAzNS42MjUsLTM1LjYyNWMwLC0xOS42NDM2MiAtMTUuOTgxMzcsLTM1LjYyNSAtMzUuNjI1LC0zNS42MjV6TTg1LjUsNjQuMTI1YzExLjc4NDc1LDAgMjEuMzc1LDkuNTkwMjUgMjEuMzc1LDIxLjM3NWMwLDExLjc4NDc1IC05LjU5MDI1LDIxLjM3NSAtMjEuMzc1LDIxLjM3NWMtMTEuNzg0NzUsMCAtMjEuMzc1LC05LjU5MDI1IC0yMS4zNzUsLTIxLjM3NWMwLC0xMS43ODQ3NSA5LjU5MDI1LC0yMS4zNzUgMjEuMzc1LC0yMS4zNzV6Ij48L3BhdGg+PC9nPjwvZz48L2c+PC9zdmc+" alt=""></a> 
+     <a href="https://www.linkedin.com/company/iete-thapar/" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzEgMTcxIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzEuOTkyMnYtMTcxLjk5MjJoMTcxLjk5MjJ2MTcxLjk5MjJ6IiBmaWxsPSIjMWYxNjNmIj48L3BhdGg+PGcgZmlsbD0iIzczYTZkOSI+PHBhdGggZD0iTTg1LjUsMTcuMWMtMzcuNzczOSwwIC02OC40LDMwLjYyNjEgLTY4LjQsNjguNGMwLDM3Ljc3MzkgMzAuNjI2MSw2OC40IDY4LjQsNjguNGMzNy43NzM5LDAgNjguNCwtMzAuNjI2MSA2OC40LC02OC40YzAsLTM3Ljc3MzkgLTMwLjYyNjEsLTY4LjQgLTY4LjQsLTY4LjR6TTU5LjgyNzIsNDcuODk3MWM0Ljc5OTQsMCA3Ljk5NzEsMy4xOTc3IDcuOTk3MSw3LjQ2MTNjMCw0LjI2MzYgLTMuMTk3Nyw3LjQ2MTMgLTguNTI3Miw3LjQ2MTNjLTQuNzk5NCwwLjAwNTcgLTcuOTk3MSwtMy4xOTc3IC03Ljk5NzEsLTcuNDYxM2MwLC00LjI2MzYgMy4xOTc3LC03LjQ2MTMgOC41MjcyLC03LjQ2MTN6TTY4LjQsMTE0aC0xNy4xdi00NS42aDE3LjF6TTEyNS40LDExNGgtMTYuMDk2OHYtMjQuOTIwNGMwLC02Ljg5MTMgLTQuMjkyMSwtOC40ODE2IC01Ljg5OTUsLTguNDgxNmMtMS42MDc0LDAgLTYuOTc2OCwxLjA2MDIgLTYuOTc2OCw4LjQ4MTZjMCwxLjA2MDIgMCwyNC45MjA0IDAsMjQuOTIwNGgtMTYuNjI2OXYtNDUuNmgxNi42MzI2djYuMzYxMmMyLjE0MzIsLTMuNzEwNyA2LjQzNTMsLTYuMzYxMiAxNC40ODM3LC02LjM2MTJjOC4wNDg0LDAgMTQuNDgzNyw2LjM2MTIgMTQuNDgzNywyMC42Nzk2eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"</a>
+     <a href="https://www.facebook.com/TUECECLUB/" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzEgMTcxIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzEuOTkyMnYtMTcxLjk5MjJoMTcxLjk5MjJ2MTcxLjk5MjJ6IiBmaWxsPSIjMWYxNjNmIj48L3BhdGg+PGcgZmlsbD0iIzczYTZkOSI+PHBhdGggZD0iTTg1LjUsMTcuMWMtMzcuNzczOSwwIC02OC40LDMwLjYyNjEgLTY4LjQsNjguNGMwLDM0LjI5MTIgMjUuMjYyNCw2Mi42MDg4IDU4LjE3NDIsNjcuNTU2NHYtNDkuNDMwNGgtMTYuOTIzM3YtMTcuOTc3OGgxNi45MjMzdi0xMS45NjQzYzAsLTE5LjgwNzUgOS42NTAxLC0yOC41IDI2LjExMTcsLTI4LjVjNy44ODMxLDAgMTIuMDU1NSwwLjU4NzEgMTQuMDI3NywwLjg0OTN2MTUuNjkyMWgtMTEuMjI5Yy02Ljk4ODIsMCAtOS40Mjc4LDYuNjI5MSAtOS40Mjc4LDE0LjA5NjF2OS44MjY4aDIwLjQ4MDFsLTIuNzc1OSwxNy45Nzc4aC0xNy43MDQydjQ5LjU3MjljMzMuMzg0OSwtNC41MjU4IDU5LjE0MzIsLTMzLjA3MTQgNTkuMTQzMiwtNjcuNjk4OWMwLC0zNy43NzM5IC0zMC42MjYxLC02OC40IC02OC40LC02OC40eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt=""></a>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

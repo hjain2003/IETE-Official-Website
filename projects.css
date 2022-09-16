@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  -webkit-backface-visibility: hidden;
+}
+
+body {
+  margin: 0;
+  background: grey;
+}
+
+.header {
+  font-size: 30px;
+  margin-left: -100px;
+  margin-top: -40px;
+  /* color: rgb(115, 166, 217); */
+  color: rgb(115, 166, 217);
+  font-weight: bold;
+}
+
+.showcase {
+  position: relative;
+  width: 90%;
+  height: 18em;
+  margin: 1em auto;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: rgb(4, 151, 158);
+}
+
+.thumbnail {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 300px;
+  z-index: 1;
+  background: #293853;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: right 250ms ease, left 250ms ease;
+}
+
+.thumbnail--awesome {
+  background-image: url("http://fc05.deviantart.net/fs70/f/2010/102/9/0/Google_Chrome_Wallpaper_by_dreski1992.jpg");
+}
+
+.thumbnail__overlay {
+  position: relative;
+  padding-top: 8em;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+.desc {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 2;
+  background: white;
+  text-align: center;
+  transition: background 250ms ease, color 250ms, width 250ms ease,
+    padding 250ms ease;
+}
+
+.desc:after {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  margin-top: -10px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent #fff transparent transparent;
+  content: "";
+  transition: border-color 250ms;
+}
+
+.showcase:hover .thumbnail {
+  right: 325px;
+  left: -25px;
+}
+
+.showcase:hover .thumbnail__overlay {
+  opacity: 1;
+}
+
+.showcase:hover .desc {
+  width: 350px;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-color: rgb(59, 104, 150);
+  color: #fff;
+}
+
+.showcase:hover .desc:after {
+  border-color: transparent #202426 transparent transparent;
+}
+
+.showcase--inverted .thumbnail {
+  right: 0;
+  left: 300px;
+}
+
+.showcase--inverted .desc {
+  left: 0;
+  right: auto;
+}
+
+.showcase--inverted .desc:after {
+  left: auto;
+  right: -20px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.showcase--inverted:hover .thumbnail {
+  left: 325px;
+  right: -25px;
+}
+
+.showcase--inverted:hover .desc:after {
+  border-color: transparent transparent transparent #202426;
+}
+
+.btn {
+  padding: 1em 2em;
+  border: 0.15em solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 250ms;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#p1,
+#p2,
+#p3 {
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+  margin: 10px;
+  border-radius: 30px;
+  background-size: contain;
+  background-position: center center;
+  /* background-image: linear-gradient(to right bottom, #141a1d, #0c1c27, #061e31, #091e3b, #171c42); */
+  color: rgb(8, 8, 72);
+
+  /* box-shadow: 15px 15px #21b673; */
+}
+
+.carousel-cell::before {
+  display: block;
+  content: "";
+}

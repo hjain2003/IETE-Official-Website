@@ -189,12 +189,13 @@ label #cancel{
   background-color: rgb(16, 16, 53);
   color: black;
   padding: 20px;
-  padding-left:350px;
-  padding-right:350px;
+  /* padding-left:350px; */
+  /* padding-right:350px; */
 }
 
 #teamheading
 {
+  text-align: left;
   color: rgb(115, 166, 217);
   margin-left: 0px;
 }
@@ -207,11 +208,12 @@ label #cancel{
   background-color: black;
   color: white;
   padding:20px;
-  padding-left:200px;
-  padding-right:200px;
+  /* padding-left:200px; */
+  /* padding-right:200px; */
 }
 .header
 {
+  text-align: left;
   margin-left: 0px;
 }
 

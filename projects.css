@@ -13,7 +13,7 @@ body {
 
 .header {
   font-size: 30px;
-  margin-left: -100px;
+  /* margin-left: -100px; */
   margin-top: -40px;
   /* color: rgb(115, 166, 217); */
   color: rgb(115, 166, 217);

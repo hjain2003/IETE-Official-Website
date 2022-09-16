@@ -17,6 +17,10 @@ body {
   width: 800px;
 }
 
+.flickity-page-dots
+{
+  margin-top: 50px;
+}
 .testimonial {
   background-color: white;
   text-align: center;
@@ -67,9 +71,12 @@ body {
 }
 
 .testimonial .pic {
+  margin-top: -20px;
   display: inline-block;
   border: 4px solid white;
   border-radius: 50%;
+  height:180px;
+  width:180px;
   box-shadow: 0 0 4px 4px #016d9b;
   overflow: hidden;
   z-index: 1;
@@ -78,7 +85,9 @@ body {
 
 .testimonial .pic img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  /* margin-bottom: 1000px; */
+  margin-bottom:20px;
 }
 
 .testimonial .name {
@@ -93,6 +102,7 @@ body {
   display: block;
   font-size: 14px;
   color: #ffd9b8;
+  margin-top: -8px;
 }
 
 .carousel-cell::before {

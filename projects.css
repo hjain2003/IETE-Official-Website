@@ -47,7 +47,9 @@ body {
 }
 
 .thumbnail--awesome {
-  background-image: url("http://fc05.deviantart.net/fs70/f/2010/102/9/0/Google_Chrome_Wallpaper_by_dreski1992.jpg");
+  background-image: url("https://content.instructables.com/ORIG/FQK/OJOP/JR0YR8BB/FQKOJOPJR0YR8BB.jpg?auto=webp");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .thumbnail__overlay {
@@ -167,4 +169,16 @@ body {
 .carousel-cell::before {
   display: block;
   content: "";
+}
+#im2
+{
+  background-image: url("http://www.intorobotics.com/wp-content/uploads/2015/04/F3LH4RUI74N4CLS_opt.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#im3
+{
+  background-image: url("https://i.ytimg.com/vi/2HEF2_I-2KA/maxresdefault.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
